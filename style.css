@@ -132,13 +132,13 @@ body {
 }
 .main {
   display: flex;
-  justify-content: center;
+  justify-content: space-evenly;
 }
 
 .mid-left {
   display: grid;
-  gap: 5px;
-  margin: 1px;
+  gap: 12px;
+  margin: 0;
   border-radius: 6px;
   background: #302a2a;
   overflow-y: auto;
@@ -151,7 +151,7 @@ body {
   align-items: left;
   background: #302a2a;
   overflow-y: auto;
-  height: 100vh;
+  height: 97vh;
   width: 60%;
 }
 
@@ -419,16 +419,16 @@ footer {
   width: 130px;
   border-radius: 10px;
 }
-
-.madeuser .inmad {
+.inmad {
   display: flex;
   justify-content: space-between;
-  margin: 2px;
+  padding: 4px 8px;
+  margin: 4px;
 }
 
 .madeuser {
   background-color: #080808;
-  margin: 1px;
+  margin: 2px;
   border-radius: 6px;
 }
 
@@ -445,6 +445,7 @@ footer {
   border: solid 1px #1a1817;
   align-items: center;
   justify-content: center;
+  height: fit-content;
   /* scroll-snap-align: start;  */
 }
 .songcard {
@@ -454,10 +455,87 @@ footer {
   flex: 1;
   height: 165px;
   scroll-snap-type: x mandatory;
+  height: fit-content;
 }
+
 .scroll-container {
   width: 100%;
   overflow-x: auto;
   display: flex;
   flex: 1;
+}
+.footer-container {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  padding: 20px;
+}
+
+.footer-column {
+}
+
+.footer-column h4 {
+  font-size: 16px;
+  font-weight: bold;
+  margin-bottom: 15px;
+}
+
+.footer-column ul {
+  list-style: none;
+}
+
+.footer-column ul li {
+  margin-bottom: 10px;
+}
+
+.footer-column ul li a {
+  color: #b3b3b3;
+  text-decoration: none;
+  font-size: 14px;
+}
+
+.footer-column ul li a:hover {
+  color: #fff;
+}
+
+.footer-bottom {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-top: 1px solid #333;
+  padding-top: 20px;
+  margin-top: 20px;
+}
+
+.legal-links {
+  list-style: none;
+  display: flex;
+}
+
+.legal-links li {
+  margin-right: 15px;
+}
+.footer-bottom p {
+  font-size: 12px;
+  margin-right: 10px;
+}
+
+.legal-links li a {
+  color: #b3b3b3;
+  text-decoration: none;
+  font-size: 12px;
+}
+
+.legal-links li a:hover {
+  color: #fff;
+}
+
+.social-icons a {
+  margin-left: 10px;
+}
+
+.social-icons img {
+  width: 35px;
+  height: 35px;
+  filter: invert(2s);
 }
